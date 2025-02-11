@@ -1,43 +1,131 @@
 # LuMoPlay-2025
-https://replit.com/@luismonsalved/LuMoPlay-2025?v=1
+
+<https://replit.com/@luismonsalved/LuMoPlay-2025?v=1>
 print("Hi people")
-# Import der Pygame-Bibliothek
+
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 import pygame
 
-# Import der random-Bibliothek für Zufall
-import random
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+} Initialisierung von Pygame
 
-# Initialisierung von Pygame
 pygame.init()
 
-# Initialisierung des Fensters
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode([screen_width, screen_height])
 
-# Definition der Variablen für die Spielschleife
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 running = True
 game_active = True
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
 
-# Laden des Hintergrundbildes
 background_image = pygame.image.load('background.png')
 
-# Laden des Spielfigurbildes
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 player_image = pygame.image.load('player.png')
 player_image = pygame.transform.scale_by(player_image, 0.5)
 
-# Laden des Apfelbildes
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 apple_image = pygame.image.load('apple.png')
 apple_image = pygame.transform.scale_by(apple_image, 0.15)
 
-# Erstellen eines Rechtecks für das Bild der Spielfigur
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 player_rect = player_image.get_rect()
 
-# Definition der Variablen für die x- und y-Koordinate der Spielfigur
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 player_x = screen_width / 2 - player_image.get_width() / 2
 player_y = screen_height - player_image.get_height()
 
-# Apfelrechtecke definieren
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 apples = []
 for i in range(5):
     apple_rect = apple_image.get_rect()
@@ -49,7 +137,16 @@ for i in range(5):
 score = 0
 font = pygame.font.SysFont(None, 40)
 
-# Spielschleife
+{
+    "editor.someSetting": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
+}
+
 while running and game_active:
     # Schleife für die Spielmechanik/-logik
     while game_active:
