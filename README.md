@@ -221,4 +221,4 @@ while running and game_active:
                 running = False
 
         # Die gesamte Spieloberfläche aktualisieren
-        pygame.display.flip()
+        pygame.display.flip())
